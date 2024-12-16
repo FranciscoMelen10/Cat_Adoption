@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+  border-bottom: 1px solid black;
+}
+
+header ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+header img {
+  width: 300px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+.separador_vertical {
+  width: 1px;
+  border-left: 1px solid black;
+}
+
+header ul .active {
+  text-decoration: underline;
+  color: gray;
+}
+
+/** Contenedor principal */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 450px;
+  max-width: 1000px;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  gap: 20px;
+}
+
+.hero .descripcion {
+  color: #7e7e7e;
+}
+
+.logo {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.hero section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero span {
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  font-weight: 700;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.hero picture svg {
+  width: 25px;
+  height: 25px;
+  fill: black;
+  transition: all 0.3s;
+}
+
+.hero picture svg:hover {
+  fill: purple;
+}
+
+/* Contenedor principal */
+.contenedor_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .github {
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s;
+}
+
+/* Cerrar sesión */
+
+.cerrar_sesion {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #ff0000;
+}
+
+.Btn img {
+  width: 25px;
+  height: 25px;
+  transition-duration: 0.3s;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  padding-left: 10px;
+}
+
+/* hover effect on button width */
+.Btn:hover {
+  width: 120px;
+  border-radius: 20px;
+  transition-duration: 0.3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px, 2px);
+}
+
+@media screen and (max-width: 730px) {
+  .hero {
+    width: 90%;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .hero section {
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header ul {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+}
