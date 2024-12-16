@@ -8,5 +8,5 @@ Btn.addEventListener("click", () => {
     alert("¡Gracias por tu donación!");
     removeDonation();
     removeUser();
-    window.location.href = "/";
+    window.location.href = "../";
 });
