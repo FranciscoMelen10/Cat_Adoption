@@ -15,6 +15,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
+  padding: 15px;
 }
 
 .contenedor_principal {
@@ -118,4 +119,12 @@ button:hover {
   background-color: #ffffff;
   color: black;
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor_recuerdame {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
 }

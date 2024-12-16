@@ -13,22 +13,22 @@ function listarDonadores() {
     <section class="contenedor_donador">
         <h1>Francisco De Jesús Meléndez Simplina</h1>
             <article>
-                <img src="/public/Icons/mail.svg" alt="Icono de " />
+                <img src="../public/Icons/mail.svg" alt="Icono de " />
                 <p>fmelendezsimplina@gmail.com</p>
             </article>
             <article>
-                    <img src="/public/Icons/phone.svg" alt="Icono de " />
+                    <img src="../public/Icons/phone.svg" alt="Icono de " />
                     <p>86542912</p>
             </article>
             <article>
-                    <img src="/public/Icons/location.svg" alt="Icono de " />
+                    <img src="../public/Icons/location.svg" alt="Icono de " />
                     <p>Km 17.5, carretera nueva león, ciudad el doral, K-95</p>
                     </article>
             <article>
-                    <img src="/public/Icons/nacionalidad.svg" alt="Icono de " />
+                    <img src="../public/Icons/nacionalidad.svg" alt="Icono de " />
                     <p>Honduras</p>
             </article>
-                    <img class="gender" src="/public/Icons/man.svg" alt="Icono de " />
+                    <img class="gender" src="../public/Icons/man.svg" alt="Icono de " />
     </section>
     `;
 
@@ -38,22 +38,22 @@ function listarDonadores() {
             <section class="contenedor_donador">
                 <h1>${donador.nombre}</h1>
                   <article>
-                    <img src="/public/Icons/mail.svg" alt="Icono de " />
+                    <img src="../public/Icons/mail.svg" alt="Icono de " />
                     <p>${donador.correo}</p>
                   </article>
                   <article>
-                    <img src="/public/Icons/phone.svg" alt="Icono de " />
+                    <img src="../public/Icons/phone.svg" alt="Icono de " />
                     <p>${donador.telefono}</p>
                   </article>
                   <article>
-                    <img src="/public/Icons/location.svg" alt="Icono de " />
+                    <img src="../public/Icons/location.svg" alt="Icono de " />
                     <p>${donador.direccion}</p>
                   </article>
                   <article>
-                    <img src="/public/Icons/nacionalidad.svg" alt="Icono de " />
+                    <img src="../public/Icons/nacionalidad.svg" alt="Icono de " />
                     <p>${donador.nacionalidad}</p>
                   </article>
-                  ${donador.sexo === "Masculino" ? '<img class="gender" src="/public/Icons/man.svg" alt="Icono del hombre" />' : '<img class="gender" src="/public/Icons/woman.svg" alt="Icono de la mujer" />'}
+                  ${donador.sexo === "Masculino" ? '<img class="gender" src="../public/Icons/man.svg" alt="Icono del hombre" />' : '<img class="gender" src="../public/Icons/woman.svg" alt="Icono de la mujer" />'}
             </section>
         `;
     });

@@ -34,7 +34,7 @@ btn_submit.addEventListener("click", (e) => {
     addUser(email.value, password.value);
 
     // Redireccionamos al home
-    window.location.href = "/Pages/home.html";
+    window.location.href = "./Pages/home.html";
   } else {
     alert("Correo y contraseña incorrectos, intente de nuevo");
   }

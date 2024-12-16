@@ -56,6 +56,6 @@ btn_submit.addEventListener("click", (e) => {
       gender.value
     )
   ) {
-    window.location.href = "/Pages/home.html";
+    window.location.href = "./home.html";
   }
 });
