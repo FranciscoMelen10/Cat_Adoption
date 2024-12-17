@@ -71,4 +71,47 @@ button:hover {
   background-color: #333;
 }
 
+/* Galeria de fotos */
+.galeria_macotas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
 
+picture {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.galeria_mascotas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mascota {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+.mascota img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.mascota h3 {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+.mascota.selected {
+  border: 2px solid rgb(127, 127, 127);
+}

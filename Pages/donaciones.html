@@ -61,13 +61,6 @@
           placeholder="Ej. Calle Principal #123"
         />
 
-        <label for="gender">Género</label>
-        <select id="gender" name="gender" class="input_gender" required>
-          <option value="">Seleccione su género</option>
-          <option value="Masculino">Masculino</option>
-          <option value="Femenino">Femenino</option>
-        </select>
-
         <label for="nationality">Nacionalidad</label>
         <input
           type="text"
@@ -77,6 +70,52 @@
           required
           placeholder="Ej. Mexicana"
         />
+
+        <label for="gender">Género</label>
+        <select id="gender" name="gender" class="input_gender" required>
+          <option value="">Seleccione su género</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+        </select>
+
+        <label for="cash">Monto a enviar</label>
+        <input
+          type="number"
+          id="cash"
+          name="cash"
+          class="input_cash"
+          required
+          placeholder="Ej. 100"
+        />
+
+        <label for="selectedPet">Elige a quien quieres apoyar:</label>
+        <input type="hidden" id="selectedPet" name="selectedPet" required />
+        <div class="galeria_mascotas">
+          <div class="mascota" data-value="Blondy">
+            <img src="../public/Pets/blondy.jpg" alt="Foto de Blondy" />
+            <h3>Blondy</h3>
+          </div>
+          <div class="mascota" data-value="Rocky">
+            <img src="../public/Pets/rocky.jpg" alt="Foto de Rocky" />
+            <h3>Rocky</h3>
+          </div>
+          <div class="mascota" data-value="Snow">
+            <img src="../public/Pets/snow.jpg" />
+            <h3>Snow</h3>
+          </div>
+          <div class="mascota" data-value="Coby">
+            <img src="../public/Pets/coby.jpg" alt="Foto de Coby" />
+            <h3>Coby</h3>
+          </div>
+          <div class="mascota" data-value="Rabbit">
+            <img src="../public/Pets/rabbit.jpg" alt="Foto de Rabbit" />
+            <h3>Rabbit</h3>
+          </div>
+          <div class="mascota" data-value="Romy">
+            <img src="../public/Pets/romy.jpg" alt="Foto de Romy"/>
+            <h3>Romy</h3>
+          </div>
+        </div>
 
         <button class="btn_submit" type="submit">Registrarse</button>
       </form>

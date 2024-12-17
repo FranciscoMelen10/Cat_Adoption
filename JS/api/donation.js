@@ -4,7 +4,9 @@ export function addDonation(
   telefono,
   direccion,
   nacionalidad,
-  sexo
+  sexo,
+  mascota,
+  monto
 ) {
   // Obtenemos las donaciones del localStorage
   const donation = getDonation();
@@ -17,6 +19,8 @@ export function addDonation(
     nacionalidad: nacionalidad,
     direccion: direccion,
     sexo: sexo,
+    mascota: mascota,
+    monto: monto,
   };
 
   // Agregamos la nueva donación al array de donaciones y lo guardamos en el localStorage
