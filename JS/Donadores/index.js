@@ -1,5 +1,6 @@
 import { getDonation, removeDonation } from "../api/donation.js";
 import { removeUser } from "../api/user.js";
+import { showToastSuccess } from "../Toast.js";
 
 // Obtenemos las donaciones del localStorage
 const donation = getDonation();
@@ -88,8 +89,7 @@ listarDonadores();
 const Btn = document.querySelector(".Btn");
 
 Btn.addEventListener("click", () => {
-  alert("¡Gracias por tu donación!");
   removeDonation();
   removeUser();
-  window.location.href = "../";
+  showToastSuccess("¡Gracias por tu donación!", "../");
 });

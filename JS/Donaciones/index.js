@@ -1,5 +1,6 @@
 "use strict";
 import { addDonation } from "../api/donation.js";
+import { showToastSuccess, showToastWarning } from "../Toast.js";
 import {
   validateEmail,
   validateMonto,
@@ -51,36 +52,39 @@ btn_submit.addEventListener("click", (e) => {
     nacionality.value === "" ||
     monto.value === ""
   ) {
-    alert("Asegurese de llenar todos los campos");
+    showToastWarning("Asegurese de llenar todos los campos");
     return;
   }
 
   // Validamos que el email sea válido
   if (!validateEmail(email.value)) {
-    alert("Correo inválido, asegurese de que sea un correo válido");
+    showToastWarning("Correo inválido, asegurese de que sea un correo válido");
     return;
   }
 
   // Validamos que el nombre sea válido
   if (!validateName(nombre.value)) {
-    alert("Nombre inválido, asegurese de que sea un nombre válido");
+    showToastWarning("Nombre inválido, asegurese de que sea un nombre válido");
     return;
   }
 
   // Validamos que el teléfono sea válido
   if (!validatePhone(phone.value)) {
-    alert("Teléfono inválido, asegurese de que sea un teléfono válido");
+    showToastWarning(
+      "Teléfono inválido, asegurese de que sea un teléfono válido (8 dígitos)"
+    );
     return;
   }
 
   // Validamos que el monto sea válido
   if (!validateMonto(monto.value)) {
+    showToastWarning("Monto inválido, asegurese de que sea un monto válido");
     return;
   }
 
   // Validamos que la mascota sea seleccionada
   if (mascota_seleccionada.value === "") {
-    alert("Seleccione una mascota");
+    showToastWarning("Seleccione una mascota");
     return;
   }
 
@@ -97,6 +101,7 @@ btn_submit.addEventListener("click", (e) => {
       monto.value
     )
   ) {
-    window.location.href = "./home.html";
+    // Si todo está correcto, mostramos un mensaje de éxito
+    showToastSuccess("Donación realizada con éxito", "./home.html");
   }
 });

@@ -29,9 +29,6 @@ export function addDonation(
 
   localStorage.setItem("donation", JSON.stringify(donationArray));
 
-  // Si todo está correcto, mostramos un mensaje de éxito
-  alert("Donación realizada con éxito");
-
   return true;
 }
 

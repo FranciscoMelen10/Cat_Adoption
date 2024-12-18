@@ -1,12 +1,12 @@
-"use strict"
+"use strict";
 import { removeDonation } from "../api/donation.js";
 import { removeUser } from "../api/user.js";
+import { showToastSuccess } from "../Toast.js";
 
 const Btn = document.querySelector(".Btn");
 
 Btn.addEventListener("click", () => {
-    alert("¡Gracias por tu donación!");
-    removeDonation();
-    removeUser();
-    window.location.href = "../";
+  removeDonation();
+  removeUser();
+  showToastSuccess("¡Gracias por tu donación!", "../");
 });
