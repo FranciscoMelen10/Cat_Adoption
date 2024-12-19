@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/Home/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,7 @@
   </head>
   <body>
     <main>
-      <header>
+      <header data-aos="fade-down" data-aos-duration="1000">
         <img class="logo" src="../public/Logo.svg" alt="logo" />
         <nav>
           <ul>
@@ -28,14 +29,14 @@
         </nav>
       </header>
 
-      <div class="hero">
+      <div class="hero" data-aos="fade-down" data-aos-duration="1000">
         <div class="contenedor">
-          <h1 class="">Dale un hogar a un amigo felino</h1>
+          <h1>Dale un hogar a un amigo felino</h1>
           <p class="descripcion">
             Nuestros felinos están esperando encontrar un hogar lleno de amor y
             cariño.
           </p>
-          <div class="">
+          <div>
             <a href="./donaciones.html">Hacer Donación</a>
           </div>
         </div>
@@ -82,5 +83,9 @@
     </main>
     <script type="module" src="../JS/Home/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

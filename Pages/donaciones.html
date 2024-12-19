@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/Donaciones/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,104 +17,203 @@
   <body>
     <main>
       <form>
-        <img class="logo" src="../public/Logo.svg" alt="logo" />
-
-        <h2>Registro para Adopción</h2>
-        <p>Complete el formulario para comenzar el proceso de adopción.</p>
-
-        <label for="fullName">Nombre completo</label>
-        <input
-          type="text"
-          id="fullName"
-          name="fullName"
-          class="input_name"
-          placeholder="Ej. Juan Pérez"
+        <img
+          class="logo"
+          src="../public/Logo.svg"
+          alt="logo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
         />
 
-        <label for="email">Correo electrónico</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="input_email"
-          placeholder="Ej. juan@ejemplo.com"
-        />
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+        >
+          Registro para Adopción
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+        >
+          Complete el formulario para comenzar el proceso de adopción.
+        </p>
 
-        <label for="phone">Teléfono</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          class="input_phone"
-          placeholder="Ej. 123-456-7890"
-        />
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+          class="contenedor_inputs"
+        >
+          <label for="fullName">Nombre completo</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            class="input_name"
+            placeholder="Ej. Juan Pérez"
+          />
+        </div>
 
-        <label for="address">Dirección</label>
-        <input
-          type="text"
-          id="address"
-          name="address"
-          class="input_address"
-          placeholder="Ej. Calle Principal #123"
-        />
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+          class="contenedor_inputs"
+        >
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input_email"
+            placeholder="Ej. juan@ejemplo.com"
+          />
+        </div>
 
-        <label for="nationality">Nacionalidad</label>
-        <input
-          type="text"
-          id="nationality"
-          name="nationality"
-          class="input_nacionality"
-          placeholder="Ej. Mexicana"
-        />
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+          class="contenedor_inputs"
+        >
+          <label for="phone">Teléfono</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="input_phone"
+            placeholder="Ej. 123-456-7890"
+          />
+        </div>
 
-        <label for="gender">Género</label>
-        <select id="gender" name="gender" class="input_gender">
-          <option value="">Seleccione su género</option>
-          <option value="Masculino">Masculino</option>
-          <option value="Femenino">Femenino</option>
-        </select>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+          class="contenedor_inputs"
+        >
+          <label for="address">Dirección</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            class="input_address"
+            placeholder="Ej. Calle Principal #123"
+          />
+        </div>
 
-        <label for="cash">Monto a enviar</label>
-        <input
-          type="number"
-          id="cash"
-          name="cash"
-          class="input_cash"
-          placeholder="Ej. 100"
-        />
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+          class="contenedor_inputs"
+        >
+          <label for="nationality">Nacionalidad</label>
+          <input
+            type="text"
+            id="nationality"
+            name="nationality"
+            class="input_nacionality"
+            placeholder="Ej. Mexicana"
+          />
+        </div>
 
-        <label for="selectedPet">Elige a quien quieres apoyar:</label>
-        <input type="hidden" id="selectedPet" name="selectedPet" />
-        <div class="galeria_mascotas">
-          <div class="mascota" data-value="Blondy">
-            <img src="../public/Pets/blondy.jpg" alt="Foto de Blondy" />
-            <h3>Blondy</h3>
-          </div>
-          <div class="mascota" data-value="Rocky">
-            <img src="../public/Pets/rocky.jpg" alt="Foto de Rocky" />
-            <h3>Rocky</h3>
-          </div>
-          <div class="mascota" data-value="Snow">
-            <img src="../public/Pets/snow.jpg" />
-            <h3>Snow</h3>
-          </div>
-          <div class="mascota" data-value="Coby">
-            <img src="../public/Pets/coby.jpg" alt="Foto de Coby" />
-            <h3>Coby</h3>
-          </div>
-          <div class="mascota" data-value="Rabbit">
-            <img src="../public/Pets/rabbit.jpg" alt="Foto de Rabbit" />
-            <h3>Rabbit</h3>
-          </div>
-          <div class="mascota" data-value="Romy">
-            <img src="../public/Pets/romy.jpg" alt="Foto de Romy" />
-            <h3>Romy</h3>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+          class="contenedor_inputs"
+        >
+          <label for="gender">Género</label>
+          <select id="gender" name="gender" class="input_gender">
+            <option value="">Seleccione su género</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+          class="contenedor_inputs"
+        >
+          <label for="cash">Monto a enviar</label>
+          <input
+            type="number"
+            id="cash"
+            name="cash"
+            class="input_cash"
+            placeholder="Ej. 100"
+          />
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <label for="selectedPet">Elige a quien quieres apoyar:</label>
+          <input type="hidden" id="selectedPet" name="selectedPet" />
+          <div class="galeria_mascotas">
+            <div class="mascota" data-value="Blondy">
+              <img src="../public/Pets/blondy.jpg" alt="Foto de Blondy" />
+              <h3>Blondy</h3>
+            </div>
+            <div class="mascota" data-value="Rocky">
+              <img src="../public/Pets/rocky.jpg" alt="Foto de Rocky" />
+              <h3>Rocky</h3>
+            </div>
+            <div class="mascota" data-value="Snow">
+              <img src="../public/Pets/snow.jpg" />
+              <h3>Snow</h3>
+            </div>
+            <div class="mascota" data-value="Coby">
+              <img src="../public/Pets/coby.jpg" alt="Foto de Coby" />
+              <h3>Coby</h3>
+            </div>
+            <div class="mascota" data-value="Rabbit">
+              <img src="../public/Pets/rabbit.jpg" alt="Foto de Rabbit" />
+              <h3>Rabbit</h3>
+            </div>
+            <div class="mascota" data-value="Romy">
+              <img src="../public/Pets/romy.jpg" alt="Foto de Romy" />
+              <h3>Romy</h3>
+            </div>
           </div>
         </div>
 
-        <button class="btn_submit" type="submit">Registrarse</button>
+        <button
+          class="btn_submit"
+          type="submit"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+        >
+          Registrarse
+        </button>
       </form>
     </main>
     <script type="module" src="../JS/Donaciones/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

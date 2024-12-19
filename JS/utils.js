@@ -1,3 +1,5 @@
+import { showToastError } from "./Toast.js";
+
 export function validateEmail(email) {
   let res = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
   return res.test(email);
@@ -18,12 +20,12 @@ export function validateName(name) {
 
 export function validateMonto(monto) {
   if (isNaN(monto)) {
-    alert("El monto debe ser un número");
+    showToastError("El monto debe ser un número");
     return false;
   }
 
   if (monto < 1) {
-    alert("El monto debe ser mayor a 0");
+    showToastError("El monto debe ser mayor a 0");
     return false;
   }
 

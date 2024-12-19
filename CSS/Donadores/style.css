@@ -63,7 +63,7 @@ header ul li a:hover {
   min-height: 100vh;
   max-width: 1200px;
   gap: 10px;
-  padding: 20px 10px;
+  padding: 30px 10px;
 }
 
 .contenedor_donadores {
@@ -71,6 +71,7 @@ header ul li a:hover {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  padding: 30px 0;
 }
 
 .contenedor_principal a {
@@ -219,7 +220,7 @@ footer .github {
   transform: translate(2px, 2px);
 }
 
-.gender{
+.gender {
   position: absolute;
   bottom: 10px;
   right: 10px;

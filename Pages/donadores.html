@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/Donadores/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,7 @@
   </head>
   <body>
     <main>
-      <header>
+      <header data-aos="fade-down" data-aos-duration="1000">
         <img class="logo" src="../public/Logo.svg" alt="logo" />
         <nav>
           <ul>
@@ -28,10 +29,9 @@
         </nav>
       </header>
 
-      <div class="contenedor_principal">
-        <h2>Donaciones:</h2>
+      <div class="contenedor_principal" data-aos="fade-up" data-aos-duration="1000">
         <div class="contenedor_donadores"></div>
-        <a href="./donaciones.html">Hacer donación</a>
+        <a href="./donaciones.html" data-aos="fade-up" data-aos-duration="1000">Hacer donación</a>
       </div>
 
     </main>
@@ -51,5 +51,9 @@
     </div>
     <script type="module" src="../JS/Donadores/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

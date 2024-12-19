@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../CSS/Acerca/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,12 @@
   </head>
   <body>
     <main>
-      <header>
+      <header
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-bottom"
+      >
         <img class="logo" src="../public/Logo.svg" alt="logo" />
         <nav>
           <ul>
@@ -27,7 +33,13 @@
           </ul>
         </nav>
       </header>
-      <div class="contenedor_principal">
+      <div
+        class="contenedor_principal"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-bottom"
+      >
         <section class="acerca">
           <h2>Acerca de</h2>
           <p>
@@ -39,7 +51,13 @@
             vidas!
           </p>
         </section>
-        <div class="hero">
+        <div
+          class="hero"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+        >
           <img
             class="logo"
             src="../public/Icons/Avatar navideño.png"
@@ -112,5 +130,9 @@
     </main>
     <script type="module" src="../JS/Acerca/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

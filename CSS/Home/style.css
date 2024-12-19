@@ -107,18 +107,18 @@ header ul .active {
 /* Galeria de gatos */
 .galeria_gatos {
   columns: 5 320px;
-  column-gap: 10px;
+  column-gap: 15px;
   width: 100%;
 }
 
 .galeria_gatos img {
   width: 100%;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .galeria_gatos img:hover {
   cursor: pointer;
-  scale: 0.95;
+  scale: 1.02;
 }
 
 /* Footer */

@@ -13,7 +13,15 @@ const displayCats = async () => {
     const cats = await fetchCats();
     let gatos = "";
     cats.forEach((cat) => {
-      gatos += `<img src="${cat.url}" alt="Cat id:${cat.id}"></img>`;
+      gatos += `
+      <img 
+        src="${cat.url}" alt="Cat id:${cat.id}"  
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-bottom"
+        />
+      `;
     });
 
     loader.style.display = "none";

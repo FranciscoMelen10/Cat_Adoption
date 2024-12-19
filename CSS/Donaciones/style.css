@@ -35,7 +35,7 @@ form p {
   color: #777777;
 }
 
-label {
+form .contenedor_inputs {
   display: block;
   font-weight: bold;
   width: 100%;
